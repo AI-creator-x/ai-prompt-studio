@@ -20,6 +20,14 @@ header, footer {
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #87CEFA;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #87CEFA;
 }
 
 .container {
@@ -94,16 +102,24 @@ input, select {
   margin: 10px 0;
   width: 100%;
   max-width: 300px;
-  border: 1px solid #87CEFA;
+  border: 2px solid #87CEFA;
   border-radius: 5px;
   background-color: white;
   color: #1F2937;
+  display: block;
+}
+
+select:focus {
+  outline: none;
+  border-color: #1F2937;
 }
 
 footer {
   margin-top: 40px;
   padding: 15px;
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #87CEFA;
+  border-radius: 10px;
 }
 
 footer strong {
@@ -125,5 +141,9 @@ footer strong {
 
   main {
     padding: 20px;
+  }
+
+  input, select {
+    width: 100%;
   }
 }
