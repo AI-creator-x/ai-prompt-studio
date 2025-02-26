@@ -1,4 +1,4 @@
-/* styles.css - Cool Modern Design */
+/* styles.css - Light Sky Blue Theme with Mobile Responsiveness */
 
 * {
   margin: 0;
@@ -8,23 +8,24 @@
 }
 
 body {
-  background-color: #121212;
-  color: #e0e0e0;
+  background-color: #F8F9FA;
+  color: #1F2937;
   text-align: center;
   padding: 0 10px;
 }
 
 header, footer {
-  background-color: #000000;
+  background-color: #1F2937;
   color: white;
   padding: 20px 0;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 nav ul {
@@ -33,7 +34,8 @@ nav ul {
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 nav ul li {
@@ -45,8 +47,8 @@ nav ul li {
 }
 
 nav ul li:hover {
-  border-color: #ff9800;
-  background-color: rgba(255, 152, 0, 0.2);
+  border-color: #87CEFA;
+  background-color: rgba(135, 206, 250, 0.2);
 }
 
 nav ul li a {
@@ -57,7 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff9800;
+  color: #87CEFA;
 }
 
 main {
@@ -67,12 +69,12 @@ main {
 }
 
 h1, h2 {
-  color: #ff9800;
+  color: #1F2937;
 }
 
 button {
   padding: 12px 18px;
-  background: linear-gradient(45deg, #ff9800, #ff5722);
+  background: #87CEFA;
   color: white;
   border: none;
   cursor: pointer;
@@ -82,7 +84,8 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(45deg, #ff5722, #ff9800);
+  background: #1F2937;
+  color: #87CEFA;
   transform: scale(1.05);
 }
 
@@ -91,18 +94,36 @@ input, select {
   margin: 10px 0;
   width: 100%;
   max-width: 300px;
-  border: 1px solid #ff9800;
+  border: 1px solid #87CEFA;
   border-radius: 5px;
-  background-color: #1e1e1e;
-  color: white;
+  background-color: white;
+  color: #1F2937;
 }
 
 footer {
   margin-top: 40px;
   padding: 15px;
-  box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer strong {
-  color: #ff9800;
+  color: #87CEFA;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  nav ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  main {
+    padding: 20px;
+  }
 }
