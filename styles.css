@@ -59,14 +59,14 @@ nav ul {
 nav ul li {
   display: inline;
   padding: 10px 20px;
-  border: 2px solid transparent;
+  border: 2px solid #87CEFA;
   transition: all 0.3s;
   border-radius: 5px;
+  background-color: rgba(135, 206, 250, 0.2);
 }
 
 nav ul li:hover {
-  border-color: #87CEFA;
-  background-color: rgba(135, 206, 250, 0.2);
+  background-color: rgba(135, 206, 250, 0.5);
 }
 
 nav ul li a {
@@ -84,10 +84,23 @@ main {
   padding: 40px 20px;
   max-width: 800px;
   margin: 0 auto;
+  text-align: left;
 }
 
 h1, h2 {
   color: #1F2937;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
 }
 
 button {
@@ -122,6 +135,15 @@ input, select {
 select:focus {
   outline: none;
   border-color: #1F2937;
+}
+
+#generated_prompt {
+  border: 2px solid #87CEFA;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(135, 206, 250, 0.2);
+  text-align: center;
 }
 
 footer {
