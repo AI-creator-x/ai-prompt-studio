@@ -28,6 +28,16 @@ header h1 {
   font-size: 2rem;
   font-weight: bold;
   color: #87CEFA;
+  text-transform: uppercase;
+}
+
+header .container::before {
+  content: "AI-Prompt-Studio";
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #87CEFA;
+  padding-bottom: 10px;
 }
 
 .container {
